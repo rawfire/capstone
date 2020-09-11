@@ -100,9 +100,9 @@ export default class Notes extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="notes-main">
         <button onClick={this.handleOpenModal}>create Note</button>
-        <section className='notes'>
+        <section className='flexbox-container'>
           {
             this.state.notes.map((note, indx) => {
               return (
@@ -125,17 +125,19 @@ export default class Notes extends React.Component {
               backgroundColor: '#9494b8'
             },
             content: {
-              color: '#669999'
+              margin: '1px',
+              color: '#669999',
+              padding: '5px'
             }
           }
         }
         >
-          <form onSubmit={this.handleAddNote}>
+          <form className="form-add-note" onSubmit={this.handleAddNote}>
             <h3>Add New Note</h3>
             <label htmlFor='note-title'>Title:</label>
             <input type='text' name='note-title' ref={ref => this.noteTitle = ref} />
             <label htmlFor='note-text'>Note</label>
-            <textarea name='note-text' ref={ref => this.noteText = ref} placeholder='type notes here...' />
+            <textarea name='note-text' rows="9" cols="30" ref={ref => this.noteText = ref} placeholder='type notes here...' />
             <input type='submit' onClick={this.handleAddNote} />
             <button onClick={this.handleCloseModal}>close</button>
           </form>

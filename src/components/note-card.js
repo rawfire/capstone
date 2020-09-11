@@ -50,7 +50,9 @@ export default class NotesCard extends React.Component {
             />
           </div>
           <div>
-            <input 
+            <textarea 
+              rows="7" 
+              cols="22"
               type='text' 
               defaultValue={this.props.note.text} 
               name='text' 
@@ -64,10 +66,10 @@ export default class NotesCard extends React.Component {
     }
     
     return (
-      <div>
-        <button onClick={this.handleEditNote}>edit</button>
-        <button onClick={()=> this.props.handleRemoveNote(this.state.note.key)}>delete</button>
+      <div className="note-card flexbox-item">
         {editingTemp}
+        <button onClick={this.handleEditNote}>edit</button>
+        <button onClick={()=> this.props.handleRemoveNote(this.props.note.key)}>delete</button>
       </div>
     )
   }

@@ -9,7 +9,7 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="header">
         <button onClick={this.props.logOut}>Log Out</button>
       </div>
     )

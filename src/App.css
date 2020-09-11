@@ -35,9 +35,84 @@
   to {
     transform: rotate(360deg);
   }
-} */
+}  */
 
+/*  starter page styles */
 
 .App {
   text-align: center;
+}
+
+.form-login {
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.form-login-input {
+  height: 30px;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin: 5px 20px ;
+  background-color:rgb(226, 252, 233);
+}
+
+input {
+  padding: 5px;
+  border: 1px dotted ;
+  margin: 2px;
+}
+
+button {
+  color: rgb(8, 95, 189);
+  align-content: space-around;
+}
+
+.section-two {
+  margin: 20px;
+}
+
+.welcome, .about {
+  font-size: 1.2em;
+}
+
+.warning {
+  color: rgb(220, 5, 5);
+}
+
+/* note-card styles */
+
+.flexbox-item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: rgb(241, 254, 239);
+}
+.note-card {
+  border: 1px solid lightcoral;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 20px;
+}
+
+/* notes page styles */
+
+.header {
+  padding: 15px;
+}
+
+.notes-main {
+  margin: 40px;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form-add-note {
+  margin: 10px;
 }
