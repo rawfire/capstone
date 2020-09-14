@@ -125,9 +125,13 @@ export default class Notes extends React.Component {
               backgroundColor: '#9494b8'
             },
             content: {
-              margin: '1px',
+              backgroundColor: '#fefefe',
+              width: '300px',
+              height: '300px',
+              margin: '10px',
               color: '#669999',
-              padding: '5px'
+              padding: '5px',
+              borderRadius: '15px'
             }
           }
         }

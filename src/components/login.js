@@ -70,11 +70,13 @@ export default class Login extends React.Component {
           <div className="about">
             Create an Account to get started,
           </div>
-          <div className="warning">
-            but save password somewhere this site doesn't retreave passwords
-          </div>
+
         </div>
       </div>
     )
   }
 }
+
+          // <div className="warning">
+          //   but save password somewhere this site doesn't retreave passwords
+          // </div>
